@@ -104,6 +104,12 @@ h1 {
   font-family: inherit;
 }
 
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
 .btn {
   padding: 10px 20px;
   border: 1px solid #000;
