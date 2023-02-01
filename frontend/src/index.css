@@ -28,7 +28,8 @@ li {
   line-height: 2.2;
 }
 
-h1 {
+h1,
+h3 {
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -84,7 +85,14 @@ h1 {
   color: #828282;
 }
 
-.form {
+.goals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.form,
+.content {
   width: 70%;
   margin: 0 auto;
 }
