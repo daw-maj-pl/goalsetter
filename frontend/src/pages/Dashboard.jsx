@@ -22,13 +22,10 @@ function Dashboard() {
 
     if (!user) {
       navigate('/login');
-    }
-
-    dispatch(getGoals());
-
-    return () => {
       dispatch(reset());
-    };
+    } else {
+      dispatch(getGoals());
+    }
   }, [user, navigate, isError, message, dispatch]);
 
   if (isLoading) {
